@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.jsp">
-                <img src="${pageContext.request.contextPath}/images/cphbusiness.png" width="400px;" class="img-fluid"/>
+                <img src="${pageContext.request.contextPath}/images/FOGLogo1.jpg" width="600px;" class="img-fluid"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,14 +29,15 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/">Page 1</a>
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/">Page 2</a>
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/">Page 3</a>
+                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/">${sessionScope.user.username}</a>
+                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/aboutus.jsp">Om os</a>
+                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/shoppingcart">Indkøbskurv
+                        (${sessionScope.cartsize})</a>
                     <c:if test="${sessionScope.user == null }">
                         <a class="nav-item nav-link" href="${pageContext.request.contextPath}/login.jsp">Login</a>
                     </c:if>
                     <c:if test="${sessionScope.user != null }">
-                        <a class="nav-item nav-link" href="${pageContext.request.contextPath}/logout">Log out</a>
+                        <a class="nav-item nav-link" href="${pageContext.request.contextPath}/logout">Log ud</a>
                     </c:if>
                 </div>
             </div>
@@ -54,16 +55,46 @@
     <hr/>
     <div class="row mt-4">
         <div class="col">
-            Nørgaardsvej 30<br/>
-            2800 Lyngby
+            Kundeservice
+            Kontakt Fog
+            Ofte stillede spørgsmål
+            Købs- og leveringsvilkår online
+            Fortrydelse og returnering
+            Fragt
+            Lån en trailer
+            Fog gavekort
+        </div>
+        <div class="col">
+            Om Fog
+            Åbningstider
+            Byg bæredygtigt
+            Udlejning
+            Fogs Fond
+            Karriere i Fog
+            Bliv kunde i Fog
+            Persondatapolitik
+            Cookies
         </div>
         <div class="col">
             <jsp:invoke fragment="footer"/><br/>
-            <p>&copy; 2022 Cphbusiness</p>
+            <p>&copy; Olsker Cupcakes</p>
         </div>
         <div class="col">
-            Datamatikeruddannelsen<br/>
-            2. semester efterår 2022
+            Aktuelt
+            Aviser og kataloger
+            Tilmeld nyhedsbrev
+            Brands
+            Blog
+            LinkedIn
+            Instagram
+            Faceboo
+        </div>
+        <div class="col">
+            Johannes Fog A/S
+            Firskovvej 20
+            2800 Lyngby
+
+            CVR-nr. 16314439
         </div>
     </div>
 

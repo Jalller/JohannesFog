@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object London
+object Washington
+object Berlin
+object NewYork
+
+map CapitalCity {
+ UK *-> London
+ USA *--> Washington
+ Germany *---> Berlin
+}
+
+object User
+object profile
+object shoppingcart
+object products
+object carport
+object categories
+object orderinfos
+object customer
+object admin
+
+map orderinfos {
+user *-> orderinfos
+}
+
+NewYork --> CapitalCity::USA
+@enduml
