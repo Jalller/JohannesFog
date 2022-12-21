@@ -14,13 +14,13 @@
 
     <jsp:body>
 
-        <form action="login" method="post">
-            <label for="username">Username: </label>
-            <input type="text" id="username" name="username"/>
-            <label for="password">Password: </label>
-            <input type="password" id="password" name="password"/>
-            <input type="submit"  value="Log in"/>
-        </form>
+        <br>
+        <br>
+        <br>
+        <b></b>
+        <p>Login her: <a href="login.jsp">Login</a></p>
+        <p>Læs om hvem vi er her: <a href="aboutus.jsp">Om os</a></p>
+
 
     </jsp:body>
 
